@@ -1,4 +1,5 @@
 <?php
+
 use App\Student;
 use Illuminate\Database\Seeder;
 
@@ -29,12 +30,13 @@ class StudentSeeder extends Seeder
                 'lastname' => 'Palma'
             ]
         ];
-
+        
         foreach ($students_list as $student){
             $newStudent = new Student();
             $newStudent->name = $student['name'];
             $newStudent->lastname = $student['lastname'];
             $newStudent->save();
         }
+        
     }
 }
