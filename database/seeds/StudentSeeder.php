@@ -23,6 +23,10 @@ class StudentSeeder extends Seeder
             [
                 'name' => 'Cloe',
                 'lastname' => 'Zarulli'
+            ],
+            [
+                'name' => 'Daniela',
+                'lastname' => 'Palma'
             ]
         ];
 
