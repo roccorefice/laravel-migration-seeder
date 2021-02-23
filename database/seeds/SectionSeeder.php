@@ -2,7 +2,7 @@
 
 use App\Section;
 use Illuminate\Database\Seeder;
-use Faker\ Generator as Faker;
+use Faker\Generator as Faker;
 
 class SectionSeeder extends Seeder
 {
@@ -15,7 +15,8 @@ class SectionSeeder extends Seeder
     {
         for ($i=0; $i < 10; $i++) { 
             $newSection = new Section();
-            $newSection->name = $faker->lexify(2);
+            $newSection->class = $faker->randomLetter();
+            $newSection->numero_studenti = $faker->numberBetween(0, 30);
             $newSection->save();
         }
     }
